@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+		<title>newsSliderDemo</title>
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scrollPic.js"></script>
+        
+	</head>
+	<body>
+	    <div class="slider-news">
+            <span class="iconfont icon-toutiao"></span>
+            <div class="slider-scroll-box" id="nwsu_Wrap">
+                <ul>
+                    <li><span class="circle"></span>1法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>2法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>3法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>4法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>5法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>6法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>7法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>8法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>9法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                    <li><span class="circle"></span>10法国兴业银行:外汇量化基金在买卖什么币种?非农邪影银登录超级周</li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function initNewsPlugins(){
+                var focusScroll = new ScrollPic();
+                   focusScroll.scrollContId = "nwsu_Wrap"; //内容容器ID
+                   focusScroll.frameWidth = 50;//显示框宽度
+                   focusScroll.pageWidth = 50; //翻页宽度
+                   focusScroll.upright = true; //垂直滚动
+                   focusScroll.speed = 30; //移动速度(单位毫秒，越小越快)
+                   focusScroll.space = 40; //每次移动像素(单位px，越大越快)
+                   focusScroll.autoPlay = true; //自动播放
+                   focusScroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+                   focusScroll.circularly = true;
+                   focusScroll.initialize(); //初始化
+            }
+            initNewsPlugins();
+        </script>
+	</body>
+</html>

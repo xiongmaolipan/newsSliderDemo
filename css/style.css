@@ -1,0 +1,57 @@
+.slider-news {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 10px;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+.slider-news:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ccc;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.slider-news .icon-toutiao, .slider-news .icon-iconzhenghe61 {
+  float: left;
+  font-size: 5.2rem;
+  height: 50px;
+  line-height: 50px;
+  color: #ed7045;
+  display: inline-block;
+  margin-right: 10px;
+}
+.slider-news .slider-scroll-box {
+  float: left;
+  width: 80%;
+  height: 50px;
+  overflow: hidden;
+}
+.slider-news .slider-scroll-box ul {
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+}
+.slider-news .slider-scroll-box ul li {
+  line-height: 25px;
+  font-size: 1rem;
+  overflow: hidden;
+  color: #333333;
+  text-overflow: ellipsis;
+}
+.slider-news .slider-scroll-box ul li .circle {
+  display: inline-block;
+  margin-right: 5px;
+  width: 3px;
+  height: 3px;
+  background-color: #f75353;
+  border: 1px solid #f75353;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
